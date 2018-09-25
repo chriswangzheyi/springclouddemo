@@ -15,10 +15,6 @@ import com.wzy.springclouddemo.service.IDeptService;
 import com.wzy.vo.Dept;
 
 
-
-
-
-
 @SpringBootTest(classes = Dept_8001_StartSpringCloudApplication.class)
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration

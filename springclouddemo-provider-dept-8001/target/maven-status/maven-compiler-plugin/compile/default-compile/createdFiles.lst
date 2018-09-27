@@ -1,0 +1,6 @@
+com\wzy\springclouddemo\controller\DeptController.class
+com\wzy\springclouddemo\test\IDeptServiceTest.class
+com\wzy\springclouddemo\dao\IDeptDAO.class
+com\wzy\springclouddemo\Dept_8001_StartSpringCloudApplication.class
+com\wzy\springclouddemo\service\IDeptService.class
+com\wzy\springclouddemo\service\impl\DeptServiceImpl.class

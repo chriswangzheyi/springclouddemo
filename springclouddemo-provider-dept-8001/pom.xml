@@ -4,13 +4,13 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.wzy</groupId>
-    <artifactId>springcloulddemo</artifactId>
+    <artifactId>springclouddemo</artifactId>
     <version>0.0.1</version>
   </parent>
   <groupId>com.wzy</groupId>
-  <artifactId>springcloulddemo-provider-dept-8001</artifactId>
+  <artifactId>springclouddemo-provider-dept-8001</artifactId>
   <version>0.0.1</version>
-  <name>springcloulddemo-provider-dept-8001</name>
+  <name>springclouddemo-provider-dept-8001</name>
   <url>http://maven.apache.org</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -20,13 +20,13 @@
 	<dependencies>
 		<dependency>
 			<groupId>com.wzy</groupId>
-			<artifactId>springcloulddemo-api</artifactId>
+			<artifactId>springclouddemo-api</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<scope>test</scope>
-		</dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>

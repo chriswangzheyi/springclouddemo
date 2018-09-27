@@ -1,7 +1,5 @@
 package com.wzy.test;
 
-import static org.junit.Assert.fail;
-
 import javax.annotation.Resource;
 
 import org.junit.Test;
@@ -25,7 +23,7 @@ public class IDeptServiceTest {
 	
 	@Test
 	public void testGet() {
-		System.out.println(this.deptService.get(1));
+		System.out.println(this.deptService.get(2));
 	}
 
 	@Test

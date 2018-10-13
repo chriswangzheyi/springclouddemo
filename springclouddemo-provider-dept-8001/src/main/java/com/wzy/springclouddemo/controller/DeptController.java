@@ -1,7 +1,8 @@
 package com.wzy.springclouddemo.controller;
 
-import static org.junit.Assert.fail;
+
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -20,13 +21,18 @@ public class DeptController {
 	@Resource
 	private IDeptService deptService ;
 	
+	@RequestMapping("/dept/sessionId")
+	public Object id(HttpServletRequest request) {
+		return request.getSession().getId() ;
+	}
+	
 	
 	@RequestMapping(value="/dept/get/{id}",method=RequestMethod.GET)
 	public Object get(@PathVariable("id") long id) {
 		return this.deptService.get(id) ;
 	}
 	
-	@RequestMapping(value="/dept/add",method=RequestMethod.GET)
+	@RequestMapping(value="/dept/add",method=RequestMethod.POST)
 	public Object add(@RequestBody Dept dept) {
 		return this.deptService.add(dept) ;
 	}

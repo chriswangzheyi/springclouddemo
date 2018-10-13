@@ -1,5 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.wzy</groupId>
@@ -20,7 +20,12 @@
 				<artifactId>springclouddemo-api</artifactId>
 				<version>0.0.1</version>
 			</dependency>
-
+			<dependency>
+				<groupId>com.wzy</groupId>
+				<artifactId>springclouddemo-security</artifactId>
+				<version>0.0.1</version>
+			</dependency>
+			
 			<dependency>	<!-- 进行SpringCloud依赖包的导入处理 -->
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
@@ -71,5 +76,7 @@
 	<modules>
 		<module>springclouddemo-api</module>
 		<module>springclouddemo-provider-dept-8001</module>
-	</modules>
+		<module>springclouddemo-comsumer-80</module>
+        <module>springclouddemo-security</module>
+  </modules>
 </project>

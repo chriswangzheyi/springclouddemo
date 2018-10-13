@@ -2,7 +2,8 @@ package com.wzy.springclouddemo.service.impl;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import javax.annotation.Resource;
+
 import org.springframework.stereotype.Service;
 
 import com.wzy.springclouddemo.dao.IDeptDAO;
@@ -12,7 +13,7 @@ import com.wzy.vo.Dept;
 @Service
 public class DeptServiceImpl implements IDeptService {
 
-	@Autowired
+	@Resource
 	private IDeptDAO deptDAO;
 	
 	@Override

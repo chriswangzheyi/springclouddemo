@@ -1,5 +1,7 @@
 package com.wzy.test;
 
+
+import static org.junit.Assert.fail;
 import javax.annotation.Resource;
 
 import org.junit.Test;

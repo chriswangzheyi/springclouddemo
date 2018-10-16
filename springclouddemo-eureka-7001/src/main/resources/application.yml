@@ -1,0 +1,22 @@
+server:
+  port: 7001
+
+security:
+  basic:
+    enabled: true   # 启用安全认证处理
+  user:
+    name: demo     # 用户名
+    password: demo  # 密码
+  
+spring:
+  application:
+    name: springcloudedemo-eureka-7001
+
+eureka: 
+  client: # 客户端进行Eureka注册的配置
+    register-with-eureka: false  # 在默认设置下，eureka服务注册中心也会将自己作为客户端来尝试注册它自己，所以我们需要禁用它的客户端注册行为:
+    fetch-registry: false        # 在默认设置下，eureka服务注册中心也会将自己作为客户端来尝试注册它自己，所以我们需要禁用它的客户端注册行为:
+    service-url:
+      defaultZone: http://demo:demo@eureka-7002.com:7001/eureka, http://demo:demo@eureka-7003.com:7003/eureka   #明文的账号密码
+  instance: # eureak实例定义
+    hostname: eureka-7001.com # 定义Eureka实例所在的主机名称

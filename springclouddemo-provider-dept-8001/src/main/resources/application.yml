@@ -1,5 +1,19 @@
 server:
   port: 8001                                            #启动端口
+ 
+eureka:
+  client: # 客户端进行Eureka注册的配置
+    service-url:
+      defaultZone: http://demo:demo@eureka-7001.com:7001/eureka,http://demo:demo@eureka-7002.com:7002/eureka,http://demo:demo@eureka-7003.com:7003/eureka
+  instance:
+    instance-id: dept-8001.com  # 在信息列表时显示主机名称
+    prefer-ip-address: true     # 访问的路径变为IP地址
+ 
+info:                #配置Eureka中的info所需信息
+  app.name: springclouddemo
+  company.name: www.wzy.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.verson$ 
   
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml    # mybatis配置文件所在路径
@@ -18,3 +32,5 @@ spring:
       initial-size: 5                               # 初始化提供的连接数
       max-total: 5                                  # 最大的连接数
       max-wait-millis: 200                          # 等待连接获取的最大超时时间
+  application:
+    name: springcloudedemo-provider-dept            # 应用名，Eurake中显示

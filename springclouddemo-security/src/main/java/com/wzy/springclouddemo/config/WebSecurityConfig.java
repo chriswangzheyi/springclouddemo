@@ -1,5 +1,9 @@
 package com.wzy.springclouddemo.config;
 
+
+//spring security的config 需要跟被使用的项目的包名一致或者在被使用项目的包名下
+// 如provider的启动项包名是com.wz.yspringclouddemo, 这里就需要是com.wzy.springclouddemo.config
+
 import javax.annotation.Resource;
 
 import org.springframework.context.annotation.Configuration;

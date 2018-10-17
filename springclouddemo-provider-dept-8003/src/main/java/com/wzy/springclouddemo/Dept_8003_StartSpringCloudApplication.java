@@ -3,12 +3,10 @@ package com.wzy.springclouddemo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-
 @SpringBootApplication
-@EnableEurekaClient
-public class Consumer_80_StartSpringCloudApplication {
+@EnableEurekaClient //服务注册注解
+public class Dept_8003_StartSpringCloudApplication {
 	public static void main(String[] args) {
-		SpringApplication.run(Consumer_80_StartSpringCloudApplication.class,
-				args);
+		SpringApplication.run(Dept_8003_StartSpringCloudApplication.class, args);
 	}
 }

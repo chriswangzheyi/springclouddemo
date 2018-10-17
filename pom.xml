@@ -97,5 +97,7 @@
 		<module>springclouddemo-eureka-7002</module>
 		<module>springclouddemo-eureka-7003</module>
     <module>springclouddemo-eureka-server</module>
+    <module>springclouddemo-provider-dept-8002</module>
+    <module>springclouddemo-provider-dept-8003</module>
   </modules>
 </project>

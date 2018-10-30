@@ -11,7 +11,8 @@ import com.wzy.commons.config.FeignClientConfig;
 import com.wzy.vo.Dept;
 
 
-@FeignClient(value="SPRINGCLOUDEDEMO-PROVIDER-DEPT",configuration=FeignClientConfig.class) //value后接Provider的application name一致
+
+@FeignClient(value="SPRINGCLOUDDEMO-PROVIDER-DEPT",configuration=FeignClientConfig.class, fallbackFactory = com.wzy.service.fallback.IDeptClientServiceFallbackFactory.class) //value后接Provider的application name一致
 public interface IDeptClientService {
 	@RequestMapping(method=RequestMethod.GET,value="/dept/get/{id}")
 	public Dept get(@PathVariable("id") long id) ;

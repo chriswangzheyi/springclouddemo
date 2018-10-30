@@ -29,8 +29,8 @@ CREATE TABLE `dept` (
 -- ----------------------------
 -- Records of dept
 -- ----------------------------
-INSERT INTO `dept` VALUES ('1', '开发部', 'mldn8001');
-INSERT INTO `dept` VALUES ('2', '财务部', 'mldn8001');
-INSERT INTO `dept` VALUES ('3', '市场部', 'mldn8001');
-INSERT INTO `dept` VALUES ('4', '后勤部', 'mldn8001');
-INSERT INTO `dept` VALUES ('5', '公关部', 'mldn8001');
+INSERT INTO `dept` VALUES ('1', '开发部', 'mldn8003');
+INSERT INTO `dept` VALUES ('2', '财务部', 'mldn8003');
+INSERT INTO `dept` VALUES ('3', '市场部', 'mldn8003');
+INSERT INTO `dept` VALUES ('4', '后勤部', 'mldn8003');
+INSERT INTO `dept` VALUES ('5', '公关部', 'mldn8003');

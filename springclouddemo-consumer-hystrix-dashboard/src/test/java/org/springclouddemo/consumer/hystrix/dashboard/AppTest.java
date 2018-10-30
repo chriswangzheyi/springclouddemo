@@ -1,4 +1,4 @@
-package com.wzy.springclouddemo;
+package org.springclouddemo.consumer.hystrix.dashboard;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

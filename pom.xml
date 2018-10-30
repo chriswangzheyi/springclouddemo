@@ -97,16 +97,21 @@
 	</build>
 	<modules>
 		<module>springclouddemo-api</module>
-		<module>springclouddemo-provider-dept-8001</module>
 		<module>springclouddemo-comsumer-80</module>
 		<module>springclouddemo-security</module>
 		<module>springclouddemo-eureka-7001</module>
 		<module>springclouddemo-eureka-7002</module>
 		<module>springclouddemo-eureka-7003</module>
 		<module>springclouddemo-eureka-server</module>
+		<module>springclouddemo-provider-dept-8001</module>
 		<module>springclouddemo-provider-dept-8002</module>
 		<module>springclouddemo-provider-dept-8003</module>
 		<module>springclouddemo-consumer-feign</module>
 		<module>springclouddemo-service</module>
+		<module>springclouddemo-comsumer-hystrix</module>
+		<module>springclouddemo-consumer-hystrix-dashboard</module>
+		<module>springclouddemo-provider-company-8101</module>
+		<module>springclouddemo-provider-hystrix-8001</module>
+		<module>springclouddemo-consumer-turbine</module>
 	</modules>
 </project>
